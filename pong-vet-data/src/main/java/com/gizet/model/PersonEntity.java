@@ -1,6 +1,6 @@
 package com.gizet.model;
 
-public class Person {
+public class PersonEntity extends BaseEntity {
 
     private String firstName;
     private String lastName;

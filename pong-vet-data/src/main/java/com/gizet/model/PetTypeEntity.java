@@ -1,6 +1,6 @@
 package com.gizet.model;
 
-public class PetType {
+public class PetTypeEntity extends BaseEntity {
 
     private String name;
 

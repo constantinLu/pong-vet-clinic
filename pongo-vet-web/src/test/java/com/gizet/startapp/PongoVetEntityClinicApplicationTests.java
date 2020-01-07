@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 @SpringBootTest
-class PongoVetClinicApplicationTests {
+class PongoVetEntityClinicApplicationTests {
 
     @Test
     void contextLoads() {

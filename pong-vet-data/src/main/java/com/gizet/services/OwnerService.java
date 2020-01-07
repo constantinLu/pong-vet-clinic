@@ -1,6 +1,6 @@
 package com.gizet.services;
 
-import com.gizet.model.Owner;
+import com.gizet.model.OwnerEntity;
 import java.util.Set;
 
 /**
@@ -8,13 +8,13 @@ import java.util.Set;
  */
 public interface OwnerService {
 
-    Owner findByLastName(String lastName);
+    OwnerEntity findByLastName(String lastName);
 
-    Owner findById(Long id);
+    OwnerEntity findById(Long id);
 
-    Owner save(Owner owner);
+    OwnerEntity save(OwnerEntity ownerEntity);
 
-    Set<Owner> findAll();
+    Set<OwnerEntity> findAll();
 
 
 

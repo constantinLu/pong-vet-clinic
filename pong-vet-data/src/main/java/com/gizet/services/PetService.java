@@ -1,15 +1,15 @@
 package com.gizet.services;
 
-import com.gizet.model.Owner;
-import com.gizet.model.Pet;
+import com.gizet.model.OwnerEntity;
+import com.gizet.model.PetEntity;
 
 import java.util.Set;
 
 public interface PetService {
 
-    Pet findById(Long id);
+    PetEntity findById(Long id);
 
-    Pet save(Owner owner);
+    PetEntity save(OwnerEntity ownerEntity);
 
-    Set<Pet> findAll();
+    Set<PetEntity> findAll();
 }
