@@ -5,7 +5,7 @@
     <parent>
         <artifactId>pongo-vet-clinic</artifactId>
         <groupId>gizet.springframework</groupId>
-        <version>0.0.2</version>
+        <version>0.0.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>pongo-vet-web</artifactId>
@@ -14,7 +14,7 @@
         <dependency>
             <artifactId>pong-vet-data</artifactId>
             <groupId>gizet.springframework</groupId>
-            <version>0.0.2</version>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
