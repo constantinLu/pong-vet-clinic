@@ -4,7 +4,7 @@
 
     <groupId>gizet.springframework</groupId>
     <artifactId>pongo-vet-clinic</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.5-SNAPSHOT</version>
 
     <modules>
         <module>pong-vet-data</module>
