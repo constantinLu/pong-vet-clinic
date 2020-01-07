@@ -69,7 +69,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:gizet/pong-vet-clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/gizet/pong-vet-clinic.git</developerConnection>
         <tag>pongo-vet-clinic-0.0.3</tag>
     </scm>
 
