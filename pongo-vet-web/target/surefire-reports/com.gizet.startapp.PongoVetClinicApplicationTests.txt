@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.gizet.startapp.PongoVetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.4 s - in com.gizet.startapp.PongoVetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.046 s - in com.gizet.startapp.PongoVetClinicApplicationTests
