@@ -1,10 +1,6 @@
 package com.gizet.services;
 
 import com.gizet.model.OwnerEntity;
-import org.springframework.data.repository.CrudRepository;
-
-import java.security.acl.Owner;
-import java.util.Set;
 
 /**
  * CUSTOM CRUD OPERATIONS
