@@ -1,10 +1,12 @@
 package com.gizet.services;
 
+import org.springframework.data.repository.CrudRepository;
+
 import java.util.Set;
 /**
  * Generic custom crud operations
  */
-public interface CrudService<T, ID> {
+public interface CrudService<T, ID>  {
 
   Set<T> findAll();
 
