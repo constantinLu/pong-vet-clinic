@@ -5,13 +5,9 @@ import com.gizet.model.VetEntity;
 import com.gizet.services.OwnerService;
 import com.gizet.services.PetService;
 import com.gizet.services.VetService;
-import com.gizet.services.map.OwnerServiceMapping;
-import com.gizet.services.map.PetServiceMapping;
-import com.gizet.services.map.VetServiceMapping;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.security.acl.Owner;
 
 /**
  * Load data on startUp

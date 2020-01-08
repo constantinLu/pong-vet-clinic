@@ -1,13 +1,14 @@
 package com.gizet.services.map;
 
 import com.gizet.model.OwnerEntity;
-import com.gizet.services.CrudService;
 import com.gizet.services.OwnerService;
+import org.springframework.stereotype.Service;
 
-import java.util.AbstractMap;
 import java.util.Set;
 
-public class OwnerServiceMapping extends AbastractMapService<OwnerEntity, Long> implements OwnerService {
+
+@Service
+public class OwnerServiceImpl extends AbstractServiceDao<OwnerEntity, Long> implements OwnerService {
 
     @Override
     public Set<OwnerEntity> findAll() {

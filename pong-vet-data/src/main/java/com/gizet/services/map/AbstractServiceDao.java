@@ -1,6 +1,5 @@
 package com.gizet.services.map;
 
-import com.gizet.services.CrudService;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,7 +11,7 @@ import java.util.Set;
  * @param <T> Object to be processed
  * @param <ID> id of the object
  */
-public abstract class AbastractMapService<T, ID>  {
+public abstract class AbstractServiceDao<T, ID>  {
 
     protected Map<ID, T> map =  new HashMap<>();
 

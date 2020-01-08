@@ -2,10 +2,12 @@ package com.gizet.services.map;
 
 import com.gizet.model.VetEntity;
 import com.gizet.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class VetServiceMapping extends AbastractMapService<VetEntity, Long> implements VetService {
+@Service
+public class VetServiceImpl extends AbstractServiceDao<VetEntity, Long> implements VetService {
 
     @Override
     public Set<VetEntity> findAll() {
