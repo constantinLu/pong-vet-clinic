@@ -1,21 +1,16 @@
 package com.gizet.services;
 
 import com.gizet.model.OwnerEntity;
+import org.springframework.data.repository.CrudRepository;
+
+import java.security.acl.Owner;
 import java.util.Set;
 
 /**
  * CUSTOM CRUD OPERATIONS
  */
-public interface OwnerService {
+public interface OwnerService extends CrudService<OwnerEntity, Long> {
 
     OwnerEntity findByLastName(String lastName);
-
-    OwnerEntity findById(Long id);
-
-    OwnerEntity save(OwnerEntity ownerEntity);
-
-    Set<OwnerEntity> findAll();
-
-
 
 }
