@@ -1,10 +1,11 @@
 package com.gizet.services.map;
 
 import com.gizet.model.PetEntity;
+import com.gizet.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMapping extends AbastractMapService<PetEntity, Long> {
+public class PetServiceMapping extends AbastractMapService<PetEntity, Long> implements PetService {
 
     @Override
     public Set<PetEntity> findAll() {

@@ -5,6 +5,12 @@ public class PersonEntity extends BaseEntity {
     private String firstName;
     private String lastName;
 
+    public PersonEntity(Long id, String firstName, String lastName) {
+        super(id);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public String getFirstName() {
         return firstName;
     }

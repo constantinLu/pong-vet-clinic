@@ -1,10 +1,11 @@
 package com.gizet.services.map;
 
 import com.gizet.model.VetEntity;
+import com.gizet.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMapping extends AbastractMapService<VetEntity, Long> {
+public class VetServiceMapping extends AbastractMapService<VetEntity, Long> implements VetService {
 
     @Override
     public Set<VetEntity> findAll() {

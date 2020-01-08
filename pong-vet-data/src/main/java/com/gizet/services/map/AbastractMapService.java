@@ -12,7 +12,7 @@ import java.util.Set;
  * @param <T> Object to be processed
  * @param <ID> id of the object
  */
-public abstract class AbastractMapService<T, ID>  implements CrudService<T, ID> {
+public abstract class AbastractMapService<T, ID>  {
 
     protected Map<ID, T> map =  new HashMap<>();
 

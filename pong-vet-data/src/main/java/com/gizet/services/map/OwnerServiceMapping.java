@@ -2,11 +2,12 @@ package com.gizet.services.map;
 
 import com.gizet.model.OwnerEntity;
 import com.gizet.services.CrudService;
+import com.gizet.services.OwnerService;
 
 import java.util.AbstractMap;
 import java.util.Set;
 
-public class OwnerServiceMapping extends AbastractMapService<OwnerEntity, Long> {
+public class OwnerServiceMapping extends AbastractMapService<OwnerEntity, Long> implements OwnerService {
 
     @Override
     public Set<OwnerEntity> findAll() {
@@ -33,4 +34,8 @@ public class OwnerServiceMapping extends AbastractMapService<OwnerEntity, Long> 
         return super.findById(id);
     }
 
+    @Override
+    public OwnerEntity findByLastName(String lastName) {
+        return null;
+    }
 }
