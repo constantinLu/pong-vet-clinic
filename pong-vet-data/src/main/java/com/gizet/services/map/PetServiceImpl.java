@@ -26,7 +26,7 @@ public class PetServiceImpl extends AbstractServiceDao<PetEntity, Long> implemen
 
     @Override
     public PetEntity save(PetEntity object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

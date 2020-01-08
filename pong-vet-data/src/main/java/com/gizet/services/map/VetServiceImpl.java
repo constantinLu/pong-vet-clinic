@@ -26,7 +26,7 @@ public class VetServiceImpl extends AbstractServiceDao<VetEntity, Long> implemen
 
     @Override
     public VetEntity save(VetEntity object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

@@ -7,8 +7,7 @@ Object
  */
 public class PetEntity extends BaseEntity {
 
-    public PetEntity(Long id, PetTypeEntity petTypeEntity, OwnerEntity ownerEntity, LocalDate birthDate) {
-        super(id);
+    public PetEntity(PetTypeEntity petTypeEntity, OwnerEntity ownerEntity, LocalDate birthDate) {
         this.petTypeEntity = petTypeEntity;
         this.ownerEntity = ownerEntity;
         this.birthDate = birthDate;

@@ -4,8 +4,7 @@ public class PetTypeEntity extends BaseEntity {
 
     private String name;
 
-    public PetTypeEntity(Long id, String name) {
-        super(id);
+    public PetTypeEntity(String name) {
         this.name = name;
     }
 

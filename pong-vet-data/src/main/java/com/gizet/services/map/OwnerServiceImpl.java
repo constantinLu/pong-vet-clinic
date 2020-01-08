@@ -27,7 +27,7 @@ public class OwnerServiceImpl extends AbstractServiceDao<OwnerEntity, Long> impl
 
     @Override
     public OwnerEntity save(OwnerEntity object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
