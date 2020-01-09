@@ -1,0 +1,14 @@
+com\gizet\services\map\OwnerServiceImpl.class
+com\gizet\services\map\PetServiceImpl.class
+com\gizet\model\PetTypeEntity.class
+com\gizet\services\VetService.class
+com\gizet\model\VetEntity.class
+com\gizet\model\PersonEntity.class
+com\gizet\model\BaseEntity.class
+com\gizet\model\OwnerEntity.class
+com\gizet\services\OwnerService.class
+com\gizet\model\PetEntity.class
+com\gizet\services\PetService.class
+com\gizet\services\map\AbstractServiceDao.class
+com\gizet\services\map\VetServiceImpl.class
+com\gizet\services\CrudService.class
