@@ -1,15 +1,12 @@
 package com.gizet.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class OwnerEntity extends PersonEntity {
 
-    public OwnerEntity(String firstName, String lastName, String address, String city, String telephone, Set<PetEntity> pets) {
+    public OwnerEntity(String firstName, String lastName) {
         super(firstName, lastName);
-        this.address = address;
-        this.city = city;
-        this.telephone = telephone;
-        this.pets = pets;
     }
 
     private String address;
@@ -18,7 +15,7 @@ public class OwnerEntity extends PersonEntity {
 
     private String telephone;
 
-    private Set<PetEntity> pets;
+    private Set<PetEntity> pets = new HashSet<>();
 
     public String getAddress() {
         return address;

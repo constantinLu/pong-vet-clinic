@@ -1,7 +1,11 @@
 package com.gizet.services.map;
 
 import com.gizet.model.OwnerEntity;
+import com.gizet.model.PetEntity;
 import com.gizet.services.OwnerService;
+import com.gizet.services.PetService;
+import com.gizet.services.PetTypeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -27,7 +31,28 @@ public class OwnerServiceImpl extends AbstractServiceDao<OwnerEntity, Long> impl
 
     @Override
     public OwnerEntity save(OwnerEntity object) {
-        return super.save(object);
+
+        if (object != null) {
+//            if(object.getPets() != null) {
+//                        object.getPets().forEach(pet -> {
+//                            if (pet.getPetTypeEntity() != null) {
+//                                if (pet.getPetTypeEntity().getId() == null) {
+//                                    pet.setPetTypeEntity(petTypeService.save(pet.getPetTypeEntity()));
+//                                }
+//                            } else {
+//                                throw new RuntimeException("Pet Type is required");
+//                            }
+//
+//                    if (pet.getId() == null) {
+//                        PetEntity savedPet = petService.save(pet);
+//                        pet.setId(savedPet.getId());
+//                    }
+//                });
+//            }
+            return super.save(object);
+        } else {
+            return null;
+        }
     }
 
     @Override

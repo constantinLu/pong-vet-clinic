@@ -2,9 +2,12 @@ package com.gizet.services.map;
 
 import com.gizet.model.PetTypeEntity;
 import com.gizet.services.PetTypeService;
+import org.springframework.stereotype.Service;
+
 
 import java.util.Set;
 
+@Service
 public abstract class PetTypeServiceImpl extends AbstractServiceDao<PetTypeEntity, Long> implements PetTypeService {
 
     @Override
