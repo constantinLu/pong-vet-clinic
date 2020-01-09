@@ -3,6 +3,8 @@ package com.gizet.bootstrap;
 import com.gizet.model.OwnerEntity;
 import com.gizet.model.VetEntity;
 import com.gizet.services.OwnerService;
+import com.gizet.services.PetService;
+import com.gizet.services.PetTypeService;
 import com.gizet.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -18,11 +20,15 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetService petService;
+    private final PetTypeService petTypeService;
 
     // initialized from the ServiceConfigurationClass
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetService petService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petService = petService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
