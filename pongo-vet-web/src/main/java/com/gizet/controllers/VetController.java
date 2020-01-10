@@ -1,6 +1,6 @@
 package com.gizet.controllers;
 
-import com.gizet.services.VetService;
+import com.gizet.services.interfacee.VetService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

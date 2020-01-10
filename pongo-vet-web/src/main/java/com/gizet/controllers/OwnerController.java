@@ -1,6 +1,6 @@
 package com.gizet.controllers;
 
-import com.gizet.services.OwnerService;
+import com.gizet.services.interfacee.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

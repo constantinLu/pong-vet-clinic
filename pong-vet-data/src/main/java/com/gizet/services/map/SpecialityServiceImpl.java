@@ -1,7 +1,7 @@
 package com.gizet.services.map;
 
 import com.gizet.model.SpecialityEntity;
-import com.gizet.services.SpecialityService;
+import com.gizet.services.interfacee.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

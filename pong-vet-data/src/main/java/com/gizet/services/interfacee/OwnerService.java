@@ -1,4 +1,4 @@
-package com.gizet.services;
+package com.gizet.services.interfacee;
 
 import com.gizet.model.OwnerEntity;
 

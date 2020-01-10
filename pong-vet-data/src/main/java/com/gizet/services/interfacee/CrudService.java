@@ -1,6 +1,4 @@
-package com.gizet.services;
-
-import org.springframework.data.repository.CrudRepository;
+package com.gizet.services.interfacee;
 
 import java.util.Set;
 /**

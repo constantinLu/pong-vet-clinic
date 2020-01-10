@@ -1,7 +1,6 @@
-package com.gizet.services;
+package com.gizet.services.interfacee;
 
 import com.gizet.model.PetTypeEntity;
-import org.springframework.data.repository.CrudRepository;
 
 public interface PetTypeService extends CrudService<PetTypeEntity, Long> {
 

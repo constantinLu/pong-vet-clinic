@@ -1,7 +1,7 @@
 package com.gizet.services.map;
 
 import com.gizet.model.VetEntity;
-import com.gizet.services.VetService;
+import com.gizet.services.interfacee.VetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
