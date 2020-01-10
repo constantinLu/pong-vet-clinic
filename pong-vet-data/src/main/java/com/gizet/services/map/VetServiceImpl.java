@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class VetServiceImpl extends AbstractServiceDao<VetEntity, Long> implements VetService {
+public class VetServiceImpl extends AbstractServiceImpl<VetEntity, Long> implements VetService {
 
     @Override
     public Set<VetEntity> findAll() {

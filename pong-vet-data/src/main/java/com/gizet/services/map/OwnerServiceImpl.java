@@ -1,18 +1,14 @@
 package com.gizet.services.map;
 
 import com.gizet.model.OwnerEntity;
-import com.gizet.model.PetEntity;
 import com.gizet.services.OwnerService;
-import com.gizet.services.PetService;
-import com.gizet.services.PetTypeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 
 @Service
-public class OwnerServiceImpl extends AbstractServiceDao<OwnerEntity, Long> implements OwnerService {
+public class OwnerServiceImpl extends AbstractServiceImpl<OwnerEntity, Long> implements OwnerService {
 
     @Override
     public Set<OwnerEntity> findAll() {

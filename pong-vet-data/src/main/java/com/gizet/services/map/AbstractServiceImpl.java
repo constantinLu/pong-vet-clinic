@@ -11,7 +11,7 @@ import java.util.*;
  * @param <T>  Object to be processed
  * @param <ID> id of the object
  */
-public abstract class AbstractServiceDao<T extends BaseEntity, ID extends Long> {
+public abstract class AbstractServiceImpl<T extends BaseEntity, ID extends Long> {
 
     protected Map<Long, T> map = new HashMap<>();
 

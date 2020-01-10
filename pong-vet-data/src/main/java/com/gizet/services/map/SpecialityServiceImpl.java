@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class SpecialityServiceImpl extends AbstractServiceDao<SpecialityEntity, Long> implements SpecialityService {
+public class SpecialityServiceImpl extends AbstractServiceImpl<SpecialityEntity, Long> implements SpecialityService {
 
     @Override
     public Set<SpecialityEntity> findAll() {
