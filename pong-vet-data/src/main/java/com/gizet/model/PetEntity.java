@@ -34,7 +34,6 @@ public class PetEntity extends BaseEntity {
     @JoinColumn(name = "owner_id")
     private OwnerEntity owner;
 
-    @Temporal(TemporalType.DATE)
     private LocalDate birthDate;
 
 

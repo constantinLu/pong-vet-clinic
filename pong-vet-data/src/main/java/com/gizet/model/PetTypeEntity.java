@@ -6,7 +6,7 @@ import javax.persistence.OneToMany;
 import java.util.Set;
 
 @Entity(name ="PET_TYPE_IS")
-public class PetTypeEntity {
+public class PetTypeEntity extends BaseEntity {
 
     private String name;
 

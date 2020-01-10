@@ -1,7 +1,10 @@
-package com.gizet.services.map;
+package com.gizet.services;
 
 
 import com.gizet.model.BaseEntity;
+import com.gizet.model.OwnerEntity;
+import com.gizet.services.interfacee.CrudService;
+import com.sun.xml.bind.v2.model.core.ID;
 
 import java.util.*;
 
@@ -54,3 +57,5 @@ public abstract class AbstractServiceImpl<T extends BaseEntity, ID extends Long>
         return nextId;
     }
 }
+
+

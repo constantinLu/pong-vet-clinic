@@ -16,7 +16,6 @@ public class VisitEntity extends BaseEntity {
         this.pet = pet;
     }
 
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime date;
 
     private String description;
