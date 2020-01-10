@@ -1,21 +1,29 @@
 package com.gizet.model;
 
-import java.time.LocalDate;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import java.time.LocalDateTime;
 
+@Entity
 public class VisitEntity extends BaseEntity {
 
-    public VisitEntity(LocalDateTime date, String description, PetEntity petId) {
+    public VisitEntity(LocalDateTime date, String description, PetEntity pet) {
         this.date = date;
         this.description = description;
-        this.petId = petId;
+        this.pet = pet;
     }
 
+    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime date;
 
     private String description;
 
-    private PetEntity petId;
+    @ManyToOne
+    @JoinColumn(name = "pet_id")
+    private PetEntity pet;
 
 
     public LocalDateTime getDate() {
@@ -34,11 +42,11 @@ public class VisitEntity extends BaseEntity {
         this.description = description;
     }
 
-    public PetEntity getPetId() {
-        return petId;
+    public PetEntity getPet() {
+        return pet;
     }
 
-    public void setPetId(PetEntity petId) {
-        this.petId = petId;
+    public void setPet(PetEntity pet) {
+        this.pet = pet;
     }
 }

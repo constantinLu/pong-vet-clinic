@@ -32,4 +32,6 @@ public class PetTypeEntity {
     public void setPets(Set<PetEntity> pets) {
         this.pets = pets;
     }
+
+
 }

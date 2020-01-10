@@ -1,11 +1,15 @@
 package com.gizet.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 /*
 Object
@@ -32,6 +36,11 @@ public class PetEntity extends BaseEntity {
 
     @Temporal(TemporalType.DATE)
     private LocalDate birthDate;
+
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<VisitEntity> visits = new HashSet<>();
+
 
 
     public String getName() {
@@ -64,5 +73,13 @@ public class PetEntity extends BaseEntity {
 
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public Set<VisitEntity> getVisits() {
+        return visits;
+    }
+
+    public void setVisits(Set<VisitEntity> visits) {
+        this.visits = visits;
     }
 }

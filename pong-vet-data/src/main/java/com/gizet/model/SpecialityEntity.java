@@ -1,10 +1,7 @@
 package com.gizet.model;
 
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 
 @Entity(name = "Speciality")
 public class SpecialityEntity extends BaseEntity {
@@ -20,5 +17,13 @@ public class SpecialityEntity extends BaseEntity {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public VetEntity getVet() {
+        return vet;
+    }
+
+    public void setVet(VetEntity vet) {
+        this.vet = vet;
     }
 }
