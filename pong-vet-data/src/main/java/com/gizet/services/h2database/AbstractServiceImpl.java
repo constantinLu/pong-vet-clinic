@@ -1,4 +1,4 @@
-package com.gizet.services;
+package com.gizet.services.h2database;
 
 
 import com.gizet.model.BaseEntity;

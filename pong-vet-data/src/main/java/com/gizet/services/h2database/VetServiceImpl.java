@@ -1,7 +1,6 @@
 package com.gizet.services.h2database;
 
 import com.gizet.model.VetEntity;
-import com.gizet.services.AbstractServiceImpl;
 import com.gizet.services.interfaces.VetService;
 import org.springframework.stereotype.Service;
 

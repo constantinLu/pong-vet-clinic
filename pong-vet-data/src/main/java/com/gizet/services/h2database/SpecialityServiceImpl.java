@@ -1,7 +1,6 @@
 package com.gizet.services.h2database;
 
 import com.gizet.model.SpecialityEntity;
-import com.gizet.services.AbstractServiceImpl;
 import com.gizet.services.interfaces.SpecialityService;
 import org.springframework.stereotype.Service;
 

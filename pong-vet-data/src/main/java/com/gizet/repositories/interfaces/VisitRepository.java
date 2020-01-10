@@ -1,9 +1,9 @@
 package com.gizet.repositories.interfaces;
 
-import com.gizet.model.OwnerEntity;
+import com.gizet.model.VisitEntity;
 import org.springframework.data.repository.CrudRepository;
 
-public interface VisitRepository extends CrudRepository<OwnerEntity, Long> {
+public interface VisitRepository extends CrudRepository<VisitEntity, Long> {
 
 
 }
