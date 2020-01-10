@@ -9,7 +9,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 
 /**
@@ -64,13 +63,13 @@ public class DataLoader implements CommandLineRunner {
 
         //pets
         PetEntity pet1 = new PetEntity("Rascal", dog, owner1, LocalDate.of(1999, 12, 23));
-        pet1.setOwnerEntity(owner1);
+        pet1.setOwner(owner1);
         petService.save(pet1);
         owner1.getPets().add(pet1);
         ownerService.save(owner1);
 
         PetEntity pet2 = new PetEntity("Kitty", cat, owner2, LocalDate.of(2010, 5, 2));
-        pet2.setOwnerEntity(owner2);
+        pet2.setOwner(owner2);
         petService.save(pet2);
         owner2.getPets().add(pet2);
         ownerService.save(owner2);

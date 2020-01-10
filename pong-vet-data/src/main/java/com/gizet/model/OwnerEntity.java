@@ -1,8 +1,12 @@
 package com.gizet.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity(name = "OWNER")
 public class OwnerEntity extends PersonEntity {
 
     public OwnerEntity(String firstName, String lastName) {
@@ -15,7 +19,9 @@ public class OwnerEntity extends PersonEntity {
 
     private String telephone;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<PetEntity> pets = new HashSet<>();
+
 
     public String getAddress() {
         return address;
