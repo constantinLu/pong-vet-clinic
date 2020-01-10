@@ -2,9 +2,6 @@ package com.gizet.services;
 
 
 import com.gizet.model.BaseEntity;
-import com.gizet.model.OwnerEntity;
-import com.gizet.services.interfacee.CrudService;
-import com.sun.xml.bind.v2.model.core.ID;
 
 import java.util.*;
 

@@ -1,17 +1,12 @@
 package com.gizet.services.springdata;
 
 import com.gizet.model.OwnerEntity;
-import com.gizet.repositories.interfacee.OwnerRepository;
-import com.gizet.repositories.interfacee.PetRepository;
-import com.gizet.repositories.interfacee.PetTypeRepository;
-import com.gizet.services.interfacee.CrudService;
-import com.gizet.services.interfacee.OwnerService;
+import com.gizet.repositories.interfaces.OwnerRepository;
+import com.gizet.services.interfaces.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.security.acl.Owner;
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 /**

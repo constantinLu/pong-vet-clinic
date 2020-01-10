@@ -1,9 +1,8 @@
-package com.gizet.services.h2database.map;
+package com.gizet.services.h2database;
 
 import com.gizet.model.OwnerEntity;
 import com.gizet.services.AbstractServiceImpl;
-import com.gizet.services.interfacee.OwnerService;
-import org.springframework.context.annotation.Profile;
+import com.gizet.services.interfaces.OwnerService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

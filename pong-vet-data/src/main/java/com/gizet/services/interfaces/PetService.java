@@ -1,4 +1,4 @@
-package com.gizet.services.interfacee;
+package com.gizet.services.interfaces;
 
 import com.gizet.model.PetEntity;
 

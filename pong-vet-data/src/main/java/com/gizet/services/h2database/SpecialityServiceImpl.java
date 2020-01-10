@@ -1,8 +1,8 @@
-package com.gizet.services.h2database.map;
+package com.gizet.services.h2database;
 
 import com.gizet.model.SpecialityEntity;
 import com.gizet.services.AbstractServiceImpl;
-import com.gizet.services.interfacee.SpecialityService;
+import com.gizet.services.interfaces.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

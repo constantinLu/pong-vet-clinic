@@ -4,9 +4,9 @@ import com.gizet.model.OwnerEntity;
 import com.gizet.model.PetEntity;
 import com.gizet.model.PetTypeEntity;
 import com.gizet.model.VetEntity;
-import com.gizet.services.interfacee.OwnerService;
-import com.gizet.services.interfacee.PetService;
-import com.gizet.services.interfacee.VetService;
+import com.gizet.services.interfaces.OwnerService;
+import com.gizet.services.interfaces.PetService;
+import com.gizet.services.interfaces.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

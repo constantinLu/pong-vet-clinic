@@ -1,4 +1,4 @@
-package com.gizet.repositories.interfacee;
+package com.gizet.repositories.interfaces;
 
 import com.gizet.model.OwnerEntity;
 import org.springframework.data.repository.CrudRepository;

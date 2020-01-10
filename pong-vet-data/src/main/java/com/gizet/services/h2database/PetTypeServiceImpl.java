@@ -1,8 +1,8 @@
-package com.gizet.services.h2database.map;
+package com.gizet.services.h2database;
 
 import com.gizet.model.PetTypeEntity;
 import com.gizet.services.AbstractServiceImpl;
-import com.gizet.services.interfacee.PetTypeService;
+import com.gizet.services.interfaces.PetTypeService;
 import org.springframework.stereotype.Service;
 
 
