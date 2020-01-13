@@ -1,12 +1,17 @@
 package com.gizet.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.Table;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -14,15 +19,14 @@ import java.util.Set;
 /*
 Object
  */
-@Entity(name = "PET")
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "PET")
 public class PetEntity extends BaseEntity {
-
-    public PetEntity(String name, PetTypeEntity petType, OwnerEntity owner, LocalDate birthDate) {
-        this.name = name;
-        this.petType = petType;
-        this.owner = owner;
-        this.birthDate = birthDate;
-    }
 
     private String name;
 
@@ -40,45 +44,4 @@ public class PetEntity extends BaseEntity {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<VisitEntity> visits = new HashSet<>();
 
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public PetTypeEntity getPetType() {
-        return petType;
-    }
-
-    public void setPetType(PetTypeEntity petType) {
-        this.petType = petType;
-    }
-
-    public OwnerEntity getOwner() {
-        return owner;
-    }
-
-    public void setOwner(OwnerEntity owner) {
-        this.owner = owner;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public Set<VisitEntity> getVisits() {
-        return visits;
-    }
-
-    public void setVisits(Set<VisitEntity> visits) {
-        this.visits = visits;
-    }
 }

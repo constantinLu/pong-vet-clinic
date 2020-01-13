@@ -1,28 +1,26 @@
 package com.gizet.model;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity(name = "Speciality")
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name ="SPECIALITY")
 public class SpecialityEntity extends BaseEntity {
 
-    private String type;
+    private String description;
 
     //@ManyToMany
    // private VetEntity vet;
 
-    public String getType() {
-        return type;
-    }
-    public void setType(String type) {
-        this.type = type;
-    }
-
-//    public VetEntity getVet() {
-//        return vet;
-//    }
-//OwnerServiceImpl
-//    public void setVet(VetEntity vet) {
-//        this.vet = vet;
-//    }
 }

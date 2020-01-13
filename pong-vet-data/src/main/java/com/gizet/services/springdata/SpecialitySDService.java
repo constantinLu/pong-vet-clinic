@@ -3,10 +3,14 @@ package com.gizet.services.springdata;
 import com.gizet.model.SpecialityEntity;
 import com.gizet.repositories.interfaces.SpecialityRepository;
 import com.gizet.services.interfaces.SpecialityService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("springdatajpa")
 public class SpecialitySDService implements SpecialityService {
 
     private final SpecialityRepository specialityRepository;

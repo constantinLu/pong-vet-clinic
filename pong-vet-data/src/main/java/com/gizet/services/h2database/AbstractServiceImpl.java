@@ -13,7 +13,7 @@ import java.util.*;
  */
 public abstract class AbstractServiceImpl<T extends BaseEntity, ID extends Long> {
 
-    protected Map<Long, T> map = new HashMap<>();
+    private Map<Long, T> map = new HashMap<>();
 
     public Set<T> findAll() {
         return new HashSet<>(map.values());

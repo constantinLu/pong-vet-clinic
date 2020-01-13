@@ -1,9 +1,18 @@
 package com.gizet.model;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Table;
 
+@Setter
+@Getter
 @MappedSuperclass
+@Table(name = "PERSON")
 public class PersonEntity extends BaseEntity {
 
     @Column(name = "first_name")
@@ -12,24 +21,4 @@ public class PersonEntity extends BaseEntity {
     @Column(name = "last_name")
     private String lastName;
 
-    public PersonEntity(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }

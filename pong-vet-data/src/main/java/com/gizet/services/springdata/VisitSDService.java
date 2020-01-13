@@ -3,10 +3,14 @@ package com.gizet.services.springdata;
 import com.gizet.model.VisitEntity;
 import com.gizet.repositories.interfaces.VisitRepository;
 import com.gizet.services.interfaces.VisitService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("springdatajpa")
 public class VisitSDService implements VisitService {
 
     private final VisitRepository visitRepository;
