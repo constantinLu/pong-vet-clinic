@@ -2,6 +2,8 @@ package com.gizet.services.h2database;
 
 import com.gizet.model.OwnerEntity;
 import com.gizet.services.interfaces.OwnerService;
+import com.gizet.services.interfaces.PetService;
+import com.gizet.services.interfaces.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,15 @@ import java.util.Set;
 @Service
 @Profile({"default", "map"})
 public class OwnerServiceImpl extends AbstractServiceImpl<OwnerEntity, Long> implements OwnerService {
+
+
+    private final PetTypeService petTypeService;
+    private final PetService petService;
+
+    public OwnerServiceImpl(PetTypeService petTypeService, PetService petService) {
+        this.petTypeService = petTypeService;
+        this.petService = petService;
+    }
 
     @Override
     public Set<OwnerEntity> findAll() {

@@ -1,1 +1,4 @@
+com\gizet\services\h2database\OwnerServiceImplTest.class
 com\gizet\startapp\PongoVetServiceEntityClinicApplicationTests.class
+com\gizet\controllers\OwnerControllerTest.class
+com\gizet\services\springdata\OwnerSDServiceTest.class

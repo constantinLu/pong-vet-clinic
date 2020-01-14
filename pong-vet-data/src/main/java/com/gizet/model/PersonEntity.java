@@ -1,5 +1,6 @@
 package com.gizet.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,9 +12,22 @@ import javax.persistence.Table;
 
 @Setter
 @Getter
+@NoArgsConstructor
 @MappedSuperclass
 @Table(name = "PERSON")
 public class PersonEntity extends BaseEntity {
+
+
+    public PersonEntity(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public PersonEntity(Long id, String firstName, String lastName) {
+        super(id);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     @Column(name = "first_name")
     private String firstName;

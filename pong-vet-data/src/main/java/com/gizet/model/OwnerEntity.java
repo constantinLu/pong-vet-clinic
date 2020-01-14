@@ -16,11 +16,33 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Entity
 @Table(name = "OWNER")
 public class OwnerEntity extends PersonEntity {
+
+    public OwnerEntity(String address, String city, String telephone, Set<PetEntity> pets) {
+        this.address = address;
+        this.city = city;
+        this.telephone = telephone;
+        this.pets = pets;
+    }
+
+    public OwnerEntity(String firstName, String lastName, String address, String city, String telephone, Set<PetEntity> pets) {
+        super(firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.telephone = telephone;
+        this.pets = pets;
+    }
+
+    @Builder
+    public OwnerEntity(Long id, String firstName, String lastName, String address, String city, String telephone, Set<PetEntity> pets) {
+        super(id, firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.telephone = telephone;
+        this.pets = pets;
+    }
 
     private String address;
 

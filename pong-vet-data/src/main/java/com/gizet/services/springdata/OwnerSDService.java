@@ -2,6 +2,8 @@ package com.gizet.services.springdata;
 
 import com.gizet.model.OwnerEntity;
 import com.gizet.repositories.interfaces.OwnerRepository;
+import com.gizet.repositories.interfaces.PetRepository;
+import com.gizet.repositories.interfaces.PetTypeRepository;
 import com.gizet.services.interfaces.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -18,10 +20,14 @@ import java.util.Set;
 public class OwnerSDService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
+    private final PetRepository petRepository;
+    private final PetTypeRepository petTypeRepository;
 
 
-    public OwnerSDService(OwnerRepository ownerRepository) {
+    public OwnerSDService(OwnerRepository ownerRepository, PetRepository petRepository, PetTypeRepository petTypeRepository) {
         this.ownerRepository = ownerRepository;
+        this.petRepository = petRepository;
+        this.petTypeRepository = petTypeRepository;
     }
 
     @Override

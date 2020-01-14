@@ -1,6 +1,9 @@
 package com.gizet.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.GeneratedValue;
@@ -9,11 +12,15 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
-@Setter
 @Getter
+@Setter
+@NoArgsConstructor
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
+    public BaseEntity(Long id) {
+        this.id = id;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
